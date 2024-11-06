@@ -83,6 +83,19 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+           
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Adjust spacing above the video if needed */
+        }
+
+        video {
+            width: 800px;
+            height: 900px;
+            border-radius: 10px; /* Optional: add rounded corners */
+        }
     </style>
 </head>
 
@@ -159,9 +172,12 @@
       </div>
     </div>
 
-<video width="320" height="240" controls>
-  <source src="images/edited video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+ <div class="video-container">
+        <video controls>
+            <source src="images/edited video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+ </div>
+    
 </body>
 </html>
